@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  --clr-background: #5A7D9A;
+  --clr-header: #1E2A38;
+  --clr-button: #FF6F61;
+  --clr-highlight: #F3F4F6;
+
+  --clr-title: #2D3A45;
+  --clr-subtitle: #3C4B57;
+  --clr-text: #5A6B78;
+  --clr-notes: #697B89;
+  --clr-secondary-text: #4B5C69;
+    
+}
+
+body {
+  margin: 0;
+  background: var(--clr-notes);
+  display: flex;
+  flex-direction: column;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  background: var(--clr-header);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+
+}
+
+a img, a.logo {
+  margin-right: auto;
+  height: 75px;
+  width: 75px;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+nav ul a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--clr-button);
+  display: flex;
+  margin-left: 20px;
+}
+
+nav ul button {
+  margin-left: 20px;
+  padding: 5px 10px;
+  border: var(--clr-button);
+  border-radius: 10px;
+  background: var(--clr-button);
+  color: #F3F4F6;
+  font-weight: bold;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  background: var(--clr-background);
+  height: 400px;
+  padding: 50px;
+} 
+
+.title {
+  font-size: 36px;
+  color: var(--clr-title);
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--clr-subtitle);
+}
+
+.hero button {
+  padding: 30px 50px;
+  border: transparent;
+  border-radius: 25px;
+  background-color: var(--clr-button);
+  color: var(--clr-highlight);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.carousel-background {
+  display: flex;
+  margin-left: auto;
+  height: 350px;
+  width: 650px;
+  background-color: #697B89;
+  justify-content: center;
+}
+
+.carousel {
+  align-self: center;
+
+}
